@@ -1,0 +1,114 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #680304;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Summary Styles */
+.cart-summary {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.cart-summary h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Menu Container Styles */
+.menu-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.menu-category h2 {
+  cursor: pointer;
+  background-color: #c30909;
+  color: white;
+  padding: 10px 0; /* Adjust padding to ensure it's only top and bottom */
+  display: block; /* Keep them as block elements */
+  width: 80%; /* Set a fixed percentage width to make all buttons equal */
+  margin: 10px auto; /* Keep margin auto to center the buttons */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the text inside the button */
+}
+
+.menu-category h2:hover {
+  background-color: #5f0202; /* A slightly darker blue on hover */
+}
+
+/* Menu Item Styles */
+.menu-item {
+  display: flex;
+  align-items: center; /* This ensures vertical alignment in the center */
+  justify-content: space-between; /* This will place the content evenly spaced within the container */
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item > div, /* Assuming each part (dish name, input, icons) is wrapped in a div */
+.menu-item input,
+.menu-item .fi-plus-circle,
+.menu-item .fi-minus-circle /* Assuming you have a similar class for minus icon */ {
+  display: flex;
+  align-items: center; /* Aligns the items vertically in the center */
+  justify-content: center; /* Centers the content horizontally */
+}
+
+.menu-item input {
+  width: 50px; /* You might want to adjust this width */
+  height: 30px; /* Set a fixed height */
+  text-align: center; /* Center the text inside the input */
+}
+
+.fi-plus-circle,
+.fi-minus-circle { /* Assuming you have a similar class for minus icon */
+  margin-left: 10px; /* Adjust the spacing as needed */
+  cursor: pointer;
+  color: #007bff;
+}
+
+
+/* Link Styles */
+.App-link
+{
+  color: #650707;
+}
+
+/* Animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
